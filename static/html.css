@@ -16,13 +16,13 @@ body {
     align-items: center;
 }
 
-@media screen and (min-aspect-ratio: 1/2) {
+@media screen and (min-aspect-ratio: 3/4) {
     .grid-container {
         grid-template-columns: auto auto auto;
     }
 }
 
-@media screen and (max-aspect-ratio: 1/2) {
+@media screen and (max-aspect-ratio: 3/4) {
     .grid-container {
         grid-template-columns: auto auto;
     }
