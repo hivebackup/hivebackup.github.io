@@ -5,7 +5,6 @@ from webbrowser import get
 
 path: str = "/home/nix/discordExports/hive/"
 
-
 def moveOs(origin, target):
     if not os.path.exists(os.path.dirname(target)):
         os.makedirs(os.path.dirname(target))
