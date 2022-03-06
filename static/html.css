@@ -30,10 +30,17 @@ img {
 .grid-item:hover {
     transform: scale(1.2);
 }
-h1, h2 {
+h2 {
     padding-right: 25px;
     /* shitty, to balance out the "open" div thingy */
+    transition: .2s;
 }
+h1 {
+    padding-right: 50px;
+    /* shitty, to balance out the "open" div thingy */
+    transition: .2s;
+}
+
 
 a {
     color: #ccc;
@@ -42,4 +49,20 @@ a {
 }
 a:hover {
     color: #fff
+}
+
+.pink {
+    color: #c300ff
+}
+.pink:hover {
+    color: #ff0095
+}
+.yellow {
+    color: #ffc400
+}
+.red {
+    color: rgb(255, 0, 0)
+}
+.green {
+    color: #adff2f;
 }

@@ -1,7 +1,11 @@
+:root {
+    --sidebarwidth: 250px
+}
+
 .sidenav {
     height: 100%;
     /* 100% Full-height */
-    width: 250px;
+    width: var(--sidebarwidth);
     /* 0 width - change this with JavaScript */
     position: fixed;
     /* Stay in place */
@@ -39,6 +43,13 @@
     font-size: 15px;
     color: #818181;
     display: block;
+}
+
+.sidenav .separator {
+    margin-bottom: -10px;
+    font-size: 50px;
+    color: #fff;
+    text-decoration: underline;     
 }
 
 

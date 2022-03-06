@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Index - HiveBackup</title>
+</head>
+
+<body>
+    <div id="sidebar" class="sidebar"></div>
+
+
+    <h1 class="yellow">Common Issues</h1>
+    <br>
+
+    <div>
+        <h2 class="title">Common fixes</h2>
+        <h2 class="green">-Play in 1.8, or at least load the world in 1.8 first</h2>
+    </div><br><br>
+
+
+    <div>
+        <h2 class="title">Spawning in the void</h2>
+        <h2 class="red">Need to find a fix</h2>
+        <h2 class="red">See bottom of page</h2>
+    </div><br>
+
+    <div>
+        <h2 class="title">Missing chunk(s)</h2>
+        <h2 class="green">Load the world in 1.8 first</h2>
+    </div><br>
+
+
+    <div>
+        <h2 class="title">Floating text</h2>
+        <h2 class="green">1.8:
+            <br>/kill @e[type="ArmorStand"]
+            <br>or
+            <br>/kill @e[type="!Player"]
+        </h2>
+        <h2 class="yellow">1.16:
+            <br>/kill @e[type="armor_stand"]
+            <br>or
+            <br>/kill @e[type="!player"]
+        </h2>
+    </div><br>
+    
+
+    <div>
+        <h2 class="title">Mobs spawning and fire spreading when loading the world</h2>
+        <h2 class="yellow">-Download NBTExplorer: 
+            <a style="color:rgb(93, 231, 255)" href="https://github.com/jaquadro/NBTExplorer/releases">(windows)</a>
+            <a style="color:rgb(93, 144, 255)" href="https://aur.archlinux.org/packages/nbtexplorer-bin">(arch)</a>
+        </h2>
+        <h2 class="yellow">-Open the downloaded world in NBTExplorer (BEFORE LOADING IT IN MINECRAFT. If it works select the zip, else extract it and select the "level.dat")</h2>
+        <h2 class="yellow">-Expand to level.dat>data>GameRules</h2>
+        <h2 class="yellow">-Set "doMobSpawning" and "doFireTick" to false</h2>
+        <h2 class="yellow">-Save (Ctrl+S or 3rd icon in top bar)</h2>
+        
+        <h2 class="green">And you should be all done</h2>
+    </div><br><br>
+
+    <div>
+        <h2 class="title">Got another issue?</h2>
+        <h2>If you have another issue, please DM me on Discord:<br>
+        <a class="yellow" href="https://Nixuge.me">You can either find my discord tag @ Nixuge.me</a><br>
+        <a class="yellow" href="https://discord.gg/BcEccZr8Db">Or join the server and look in the announcments</a>
+        </h2>
+        <h2 class="red">
+            If possible, especially if you're experiencing the "spawn in void" glitch, please dm me a few things:<br>
+            -Your os (Macos/Windows/Linux)<br>
+            -The tool you used to extract (Winrar/7zip/Windows Explorer/unzip)<br>
+            -Your game version (1.8.9/1.16/1.18)<br>
+            -Where you tried to open the world (Local solo/Server)
+        </h2>
+    </div><br>
+    
+
+    <br><br>
+
+
+</body>
+
+</html>
+
+<style>
+    @import url('static/html.css');
+
+    body {
+        transition: 0.2s;
+        padding: 0 0 0 calc(var(--sidebarwidth) + 20px);
+        text-align: left;
+    }
+
+    .title {
+        text-decoration:underline;
+        font-size: 200%;
+    }
+
+</style>
+<script src="/static/sidebar.js"></script>

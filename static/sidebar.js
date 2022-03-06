@@ -5,7 +5,10 @@ para.innerHTML = ' \
 <!-- MOSTLY SKIDDED FROM https://www.w3schools.com/howto/howto_js_sidenav.asp --> \
 <div id="mySidenav" class="sidenav"> \
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> \
+    <a class="separator">Meta</a> \
     <a href="/">Home</a> \
+    <a href="/commonissues.html#">Common Issues</a> \
+    <a class="separator">Maps</a> \
     <a href="/lobbies.html#">Lobbies</a> \
     <a href="/gravity.html#">Gravity</a> \
     <a href="/survivalgames.html#">Survival Games</a> \
@@ -34,11 +37,12 @@ para.innerHTML = ' \
 '
 
 /* Set the width of the side navigation to 250px */
+
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.documentElement.style.setProperty('--sidebarwidth', "250px");
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+    document.documentElement.style.setProperty('--sidebarwidth', "0px");
 }
