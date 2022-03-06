@@ -4,7 +4,8 @@ html {
     text-align: center;
 }
 body {
-    padding: 0px 30px 60px 30px;
+    padding: 0px 30px 60px calc(var(--sidebarwidth) + 30px);
+    transition: 0.2s;
 }
 
 .grid-container {
@@ -36,11 +37,13 @@ h2 {
     transition: .2s;
 }
 h1 {
-    padding-right: 50px;
+    padding-right: 25px;
     /* shitty, to balance out the "open" div thingy */
+    
     transition: .2s;
+    font-size: 300%;
+    text-decoration:underline;
 }
-
 
 a {
     color: #ccc;

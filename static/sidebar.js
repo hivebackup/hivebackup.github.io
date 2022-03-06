@@ -8,6 +8,7 @@ para.innerHTML = ' \
     <a class="separator">Meta</a> \
     <a href="/">Home</a> \
     <a href="/commonissues.html#">Common Issues</a> \
+    <a href="https://discord.gg/BcEccZr8Db">Discord</a> \
     <a class="separator">Maps</a> \
     <a href="/lobbies.html#">Lobbies</a> \
     <a href="/gravity.html#">Gravity</a> \
@@ -33,13 +34,20 @@ para.innerHTML = ' \
     <a class="small" href="/arcade.html#splegg">Splegg</a> \
     <a class="small" href="/arcade.html#batterydash">Battery Dash</a> \
   </div> \
-  <div class="open" onclick="openNav()">≡</div><br><br> \
+  <div class="open" onclick="openNav()">≡</div><br><br><div style="color: #111">.</div> \
 '
 
-/* Set the width of the side navigation to 250px */
+document.documentElement.style.setProperty('--sidebarwidth', "250px");
 
+
+/* Set the width of the side navigation to 250px */
 function openNav() {
-    document.documentElement.style.setProperty('--sidebarwidth', "250px");
+    if (getComputedStyle(window.document.body).getPropertyValue('--sidebarwidth') == "250px") {
+        closeNav()
+    } else {
+        document.documentElement.style.setProperty('--sidebarwidth', "250px");
+    }
+    
 }
 
 /* Set the width of the side navigation to 0 */
