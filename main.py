@@ -141,14 +141,15 @@ def doTheThing():
 bp = "/home/nix/.minecraft/saves/"
 for folder in os.listdir(bp):
     if getExtension(folder) == 'zip':
-        os.system("7z e "+bp+folder+ " -o"+bp+folder[:-4])
-        os.system("rm "+bp+folder)
+        os.system("7z e '"+bp+folder+ "' -o'"+bp+folder[:-4] +"'")
+        os.system("rm '"+bp+folder + "'")
         continue
     
     if not os.path.exists(bp + folder+ "/region"):
         os.makedirs(bp + folder+ "/region")
 
     for file in os.listdir(bp + folder):
-        print(file[:7])
+        #print(file[:7])
         if file[:7] == "region\\":
+            print("moved " + file)
             os.system("mv '"+bp+folder+"/"+file+"' '"+bp+folder+"/region/"+file[7:]+"'")
